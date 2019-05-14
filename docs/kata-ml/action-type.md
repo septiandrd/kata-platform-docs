@@ -202,6 +202,26 @@ options:
               payload: JsonObject
 ```
 
+## Quick Reply (LINE)
+
+```yaml
+# an template action (mandatory) followed by quick reply (optional)
+type: "template"
+options:
+    type: "button" | "text" | "carousel" | "image"
+    items:
+        quickreply:
+            - type: "camera" | "cameraRoll" | "location"
+              label: string
+            - type: "postback"
+              label: string
+              payload: JsonObject
+            - type: "datetimepicker",
+              label: string,
+              mode: "date" | "time" | "datetime"
+              payload": JsonObject
+```
+
 ## Schedule Action
 
 ```yaml
